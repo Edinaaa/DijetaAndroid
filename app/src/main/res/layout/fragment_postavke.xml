@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/width_inputa"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margina_inputa"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Ime i prezime">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/postavke_ime_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/width_inputa"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margina_inputa"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Korisničko ime">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/postavke_korisnickoime_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margina_inputa"
+        android:layout_width="@dimen/width_inputa"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Nova lozinka">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/postavke_novaLozinka_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:inputType="textPassword"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margina_inputa"
+        android:layout_width="@dimen/width_inputa"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Potvrda lozinke">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/postavke_potvrdaNovaLozinka_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margina_inputa"
+        android:layout_width="@dimen/width_inputa"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/postavke_email_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    //floating button
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_fragment_postavke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_done_24px_md_white"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

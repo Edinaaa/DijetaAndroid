@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dijete"
+
+            android:title="@string/menu_dijete" />
+
+
+
+    <item android:title="Dodavanje novih">
+        <menu>
+            <group android:checkableBehavior="single">
+
+            <item
+
+                android:id="@+id/nav_nova_dijeta"
+                android:title="@string/menu_nova_dijeta" />
+            <item
+                android:id="@+id/nav_nova_namirnica"
+                android:title="@string/menu_nova_namirnica" />
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Profil">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_odjava"
+                android:title="@string/menu_odjava" />
+            <item
+                android:id="@+id/nav_postavke"
+                android:title="@string/menu_postavke" />
+            </group>
+        </menu>
+    </item>
+
+    </group>
+
+</menu>
+

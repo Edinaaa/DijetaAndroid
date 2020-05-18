@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/Dimenzije_visinaListe1_md"
+    android:weightSum="2"
+
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:weightSum="1"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/row_pretraga_namirnica_textView"
+            android:text="namirnica"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/textSize_md_16"
+            android:fontFamily="@string/FontMediumMD"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/row_pretraga_kalorije_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textColor="@color/secondary_text"
+
+            android:fontFamily="@string/forntMD"
+            android:text="3000 kcal"
+            android:textSize="@dimen/MetaDate_md_14"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+</LinearLayout>

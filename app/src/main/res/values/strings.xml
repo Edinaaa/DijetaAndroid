@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DijetaApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_dijete">Dijete</string>
+    <string name="menu_nova_dijeta">Nova dijeta</string>
+    <string name="menu_nova_namirnica">Nova namirnica</string>
+    <string name="menu_novi_obrok">Novi obrok</string>
+    <string name="menu_odjava">Odjava</string>
+    <string name="menu_postavke">Postavke profila</string>
+    <string name="FontMediumMD">sans-serif-medium</string>
+    <string name="forntMD">sans-serif</string>
+    <string name="preference_file_key">preference</string>
+    <string name="username_key">username</string>
+    <string name="pass_key">pass</string>
+    <string name="hint_text">Naziv</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

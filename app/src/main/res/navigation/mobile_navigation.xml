@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dijete">
+
+    <fragment
+        android:id="@+id/nav_dijete"
+        android:name="com.example.vjezbanavdrawer.ui.Dijete.DijeteFragment"
+        android:label="@string/menu_dijete"
+
+        tools:layout="@layout/fragment_dijete" />
+
+
+    <fragment
+        android:id="@+id/nav_nova_dijeta"
+        android:name="com.example.vjezbanavdrawer.ui.NovaDijeta.NovaDijetaFragment"
+        android:label="@string/menu_nova_dijeta"
+        tools:layout="@layout/fragment_nova_dijeta" />
+
+    <fragment
+        android:id="@+id/nav_nova_namirnica"
+        android:name="com.example.vjezbanavdrawer.ui.NovaNamirnica.NovaNamirnicaFragment"
+        android:label="@string/menu_nova_namirnica"
+        tools:layout="@layout/fragment_nova_namirnica" />
+
+
+    <fragment
+        android:id="@+id/nav_postavke"
+        android:name="com.example.vjezbanavdrawer.ui.Postavke.PostavkeFragment"
+        android:label="@string/menu_postavke"
+        tools:layout="@layout/fragment_postavke" />
+
+    <fragment
+        android:id="@+id/nav_odjava"
+        android:name="com.example.vjezbanavdrawer.ui.Odjava.OdjavaFragment"
+        android:label="@string/menu_odjava"
+        tools:layout="@layout/fragment_odjava" />
+</navigation>

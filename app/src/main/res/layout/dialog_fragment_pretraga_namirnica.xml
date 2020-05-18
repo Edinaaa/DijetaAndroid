@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:id="@+id/ll"
+   >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margina_inputa"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Naziv namirnice">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pretraga_namirnica_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margina_inputa"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="količina">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pretraga_kolicina_edinttext"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margina_inputa"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="jm">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pretraga_jm_edinttext"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:text="kom"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/ll"
+        android:id="@+id/pretraga_namirnica_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/Dimenizija_margineListe_md"
+        android:layout_marginRight="@dimen/Dimenizija_margineListe_md"
+     />
+    //floating button
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/pretraga_namirnica_btn_trazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_add_24px_materialdesign_white"
+
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
